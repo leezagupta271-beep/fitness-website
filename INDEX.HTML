@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <h2>Fitness Hub</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#bmi">BMI</a>
+        <a href="#workout">Workout</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+    <h1>Transform Your Body & Mind 💪</h1>
+    <p>Track fitness, plan workouts, and stay healthy easily.</p>
+    <button onclick="scrollToSection('bmi')">Get Started</button>
+</section>
+
+<!-- BMI -->
+<section id="bmi" class="section">
+    <h2>BMI Calculator</h2>
+    <input type="number" id="height" placeholder="Height (cm)">
+    <input type="number" id="weight" placeholder="Weight (kg)">
+    <button onclick="calculateBMI()">Calculate</button>
+    <p id="result"></p>
+</section>
+
+<!-- Workout Planner -->
+<section id="workout" class="section">
+    <h2>Workout Planner</h2>
+    <input type="text" id="taskInput" placeholder="Enter exercise">
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <input type="text" id="name" placeholder="Name">
+    <input type="email" id="email" placeholder="Email">
+    <textarea id="message" placeholder="Message"></textarea>
+    <button onclick="validateForm()">Submit</button>
+</section>
+
+<footer>
+    <p>© 2026 Fitness Hub</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
